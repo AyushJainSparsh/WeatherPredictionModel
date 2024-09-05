@@ -30,4 +30,3 @@ def app():
                 st.success('Weather Condition : '+str(output3[0]))
     except :
         st.warning('Insert all the values as instructed in about section.')
-app()
