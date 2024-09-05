@@ -5,10 +5,10 @@ def app():
     value1 =st.text_input('Enter Temperature in Celsius :')
     value2 =st.text_input('Enter Wind speed in kph :')
     value3 =st.text_input('Enter Pressure in mb :')
-    value1 = float(value1)
-    value2 = float(value2)
-    value3 = float(value3)
     try :
+        value1 = float(value1)
+        value2 = float(value2)
+        value3 = float(value3)
         if st.button('Predict') :
             if value1 == '' or value2 == '' or value3 == '' :
                 st.warning('Please Enter all the details.')
