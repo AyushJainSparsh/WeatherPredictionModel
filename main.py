@@ -16,7 +16,7 @@ class Main :
             app = option_menu(
                 menu_title = 'Weather Prediction' ,
                 options = ['Home' , 'About' , 'Visualize'] , 
-                icons = ['house-fill', 'info-circle-fill' , 'drawing'] ,
+                icons = ['house-fill', 'info-circle-fill' , 'bar-chart-fill'] ,
                 menu_icon = 'cloud-rain-fill' , 
                 default_index = 1 ,
                 styles = {
