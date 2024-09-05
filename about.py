@@ -21,3 +21,6 @@ def app():
                +' than these format will lead to error and you will don\'t get you required output you want.')
     
     st.markdown('#### :rainbow[Thank You]')
+
+    st.link_button('Visit my Github repository' ,
+                    'https://github.com/AyushJainSparsh/WeatherPredictionModel/blob/main/About%20Project.ipynb')

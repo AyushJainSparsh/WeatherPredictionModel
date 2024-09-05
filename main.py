@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-import home , about
+import home , about , visualize
 
 class Main :
     def __init__(self):
@@ -15,8 +15,8 @@ class Main :
         with st.sidebar :
             app = option_menu(
                 menu_title = 'Weather Prediction' ,
-                options = ['Home' , 'About'] , 
-                icons = ['house-fill', 'info-circle-fill'] ,
+                options = ['Home' , 'About' , 'Visualize'] , 
+                icons = ['house-fill', 'info-circle-fill' , 'drawing'] ,
                 menu_icon = 'cloud-rain-fill' , 
                 default_index = 1 ,
                 styles = {
@@ -29,4 +29,6 @@ class Main :
             home.app()
         if app == 'About' :
             about.app()
+        if app == 'Visualize':
+            visualize.app()
     run()
